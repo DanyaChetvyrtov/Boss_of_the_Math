@@ -1,0 +1,133 @@
+body{
+	align-items:center ;
+    background: linear-gradient(320deg, #ff00f2, #4000ff); 
+    display: flex;
+    font-family:"Dosis",sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+header {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#upper {
+	margin-left: auto;
+    margin-right: auto;
+	display: flex;
+	flex-flow: row wrap;
+	width: 40em;
+	background:rgba(255, 255, 255, 0.30);
+	border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+	align-items: center;
+	justify-content: center;
+}
+
+#matrix1, #matrix2{
+	order: 1;
+	width: 10em;
+	height: 40%;
+}
+#matrix1>input, #matrix2>input{
+	color: rgb(192, 21, 155);
+}
+
+#operations {
+	order: 1;
+	width: 5em;
+	height: 40%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+.operation {
+	width: 100%;
+	height: 10%;
+	color: #ffffff;
+	border: 1px;
+	border-radius: 20px;
+	background-color: #b832b8;
+	margin: 20%;
+}
+
+
+.parent {
+	display: flex;
+	flex-flow: row wrap;
+	width: 9em;
+	background: #dfb9ea;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	order: 1;
+	font-family: "Times New Roman", serif;
+	width: 9em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r1, .m2r1 {
+	order: 2;
+	width: 3em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r2, .m2r2 {
+	order: 3;
+	width: 3em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r3, .m2r3 {
+	order: 4;
+	width: 3em;
+	height: 10%;
+	text-align: center;
+}
+
+.funct{
+	order: 5;
+	width: 12em;
+	height: 40%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top:10%;
+	margin-right: 14em;
+}
+
+.function {
+	align-items: center;
+	width: 300px;
+	height: 20%;
+	border-radius: 12px;
+	background-color: #ff05f2e6;
+}
+
+#console {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 40%;
+	height: 50%;
+}
+h1 {
+	color: white;
+	} 
+h2 {
+	font-size: 25px;
+}
