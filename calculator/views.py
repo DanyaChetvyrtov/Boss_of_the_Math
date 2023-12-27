@@ -4,6 +4,9 @@ from django.template import loader
 
 
 # Create your views here.
-def index(request):
-    template = loader.get_template('calc.html')
-    return HttpResponse(template.render())
+def calc(request):
+    return render(request, 'calc.html')
+
+
+def matrix_calc(request):
+    return render(request, 'matrix_calc.html')

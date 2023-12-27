@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from calculator import views
 
 urlpatterns = [
-    path("calculator/", include('calculator.urls')),
+    path("calculator/", views.calc, name='calc'),
+    path("mat_calc/", views.matrix_calc, name='matrix_calc'),
     path('admin/', admin.site.urls),
 ]

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	{% load static %}
 	<meta charset="UTF-8">
 	<title>Калькулятор матриц</title>
-	<script src="./MatrixCalculator.js"></script>
-	<link rel="stylesheet" href="C:\Users\123\OneDrive\Рабочий стол\Django_projects\Boss_of_the_math\Boss_of_the_math\calculator\static\css\style2.css">
+	<link rel="stylesheet" href="{% static 'css\style2.css'%}">
+	<script src="{% static 'js\MatrixCalculator.js' %}"></script>
 </head>
 
 <body>
@@ -52,5 +53,6 @@
 	<div id="lower">
 			<textarea wrap="32" rows="10" cols="20" id="console" disabled></textarea>
 	</div>
+    <div class="other_page_butt"><a href="{% url 'calc' %}">Перейти к калькулятору</a></div>
 </body>
 </html>
