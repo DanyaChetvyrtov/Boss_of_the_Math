@@ -7,11 +7,11 @@ html{
 *::after{
     box-sizing: inherit;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 body{
     align-items:center ;
-    background: linear-gradient(320deg, #ff00f2, #4000ff); 
+    background: linear-gradient(320deg, #ff00f2, #4000ff);
     display: flex;
     font-family:"Dosis",sans-serif;
     font-display: swap;
@@ -31,7 +31,7 @@ body{
     flex-basis: 400px;
     height: 540px;
     padding: 20px 35px;
-}  
+}
 .screen{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);

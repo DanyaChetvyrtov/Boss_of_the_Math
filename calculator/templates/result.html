@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css\style.css'%}">
+</head>
+<body>
+    <div class="wrapper">
+        The result is:
+        <h1>{{ans}}</h1>
+        <a href="{% url 'calc' %}">Go back</a>
+    </div>
+</body>
+</html>

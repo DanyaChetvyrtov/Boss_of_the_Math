@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" href="{% static 'css\style.css'%}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="other_page_butt"><a href="{% url 'calc' %}">Перейти к обычному калькулятору</a></div>
+        <div class="other_page_butt"><a href="{% url 'matrix_calc' %}">Перейти к калькулятору матриц</a></div>
+        <div class="other_page_butt"><a href="{% url 'binary_calc' %}">Перейти к калькулятору бинарных чисел</a></div>
+        <div class="other_page_butt"><a href="{% url 'mat_problems' %}">Перейти к базе задач</a></div>
+    </div>
+</body>
+</html>

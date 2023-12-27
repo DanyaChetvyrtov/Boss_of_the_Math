@@ -19,7 +19,12 @@ from django.urls import path, include
 from calculator import views
 
 urlpatterns = [
+    path('', views.index, name='index'),
     path("calculator/", views.calc, name='calc'),
     path("mat_calc/", views.matrix_calc, name='matrix_calc'),
+    path('calculator/result/', views.result, name='result'),
+    path('bin_calc/', views.binary_calc, name='binary_calc'),
+    path('bin_calc/result/', views.binary_result, name='binary_result'),
+    path('mat_problems/', views.MathematicalProblemListView.as_view(), name='mat_problems'),
     path('admin/', admin.site.urls),
 ]

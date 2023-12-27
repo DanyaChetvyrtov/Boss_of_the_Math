@@ -7,16 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{% static 'css\style.css'%}">
-<!--  <script src="{% static 'js\script.js' %}"></script>-->
+  <script src="{% static 'js\script.js' %}"></script>
   <title> Boss of the math </title>
 </head>
 <body>
     <div class="wrapper">
     <form action="result">
-      <input type="number" name="number1" placeholder="Enter first number" class="screen">
+      <input type="text" name="bin_num1" placeholder="Enter first binary number" class="screen">
       <br>
       <br>
-      <input type="number" name="number2" placeholder="Enter second number" class="screen">
+      <input type="text" name="bin_num2" placeholder="Enter second binary number" class="screen">
       <br>
       <br>
       <button type="submit" name="add" class="calc-button">Add</button>
@@ -25,6 +25,6 @@
       <button type="submit" name="divide" class="calc-button">Divide</button>
     </form>
     </div>
-    <div class="other_page_butt"><a href="{% url 'index' %}">На главную</a></div>
+        <div class="other_page_butt"><a href="{% url 'index' %}">На главную</a></div>
 </body>
 </html>
